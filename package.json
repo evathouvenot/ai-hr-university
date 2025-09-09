@@ -1,0 +1,32 @@
+{
+  "name": "ai-hr-university",
+  "version": "1.0.0",
+  "description": "AI in HR University - Free educational platform by Workleap for HR leaders to master AI-powered people management",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "AI",
+    "HR",
+    "education",
+    "workleap",
+    "employee-engagement",
+    "people-management",
+    "artificial-intelligence",
+    "human-resources"
+  ],
+  "author": "Workleap",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workleap/ai-hr-university.git"
+  },
+  "homepage": "https://ai-hr-university.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
