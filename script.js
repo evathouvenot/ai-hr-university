@@ -359,7 +359,10 @@ function setupInteractiveElements() {
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
+            // Only prevent default for non-navigation buttons
+            if (!this.href || this.href.includes('#')) {
+                e.preventDefault();
+            }
             
             // Create ripple effect
             const ripple = document.createElement('span');
@@ -385,8 +388,8 @@ function setupInteractiveElements() {
             this.style.overflow = 'hidden';
             this.appendChild(ripple);
             
-            // Special handling for enrollment buttons
-            if (this.textContent.includes('Start Course') || this.textContent.includes('Enroll')) {
+            // Special handling for enrollment buttons (but not navigation buttons)
+            if ((this.textContent.includes('Start Course') || this.textContent.includes('Enroll')) && !this.href) {
                 this.textContent = 'Enrolling...';
                 this.style.background = 'var(--success)';
                 
