@@ -1110,6 +1110,7 @@
 .challenge-info p {
     font-size: 16px;
     opacity: 0.9;
+    color: var(--white);
 }
 
 .challenge-steps {
@@ -1316,6 +1317,7 @@
     font-size: 18px;
     opacity: 0.9;
     margin-bottom: 40px;
+    color: var(--white);
 }
 
 .completion-stats {
@@ -1356,6 +1358,7 @@
     font-size: 16px;
     opacity: 0.9;
     margin-bottom: 24px;
+    color: var(--white);
 }
 
 .next-actions {
@@ -1526,6 +1529,7 @@
     font-size: 14px;
     opacity: 0.9;
     margin-bottom: 20px;
+    color: var(--white);
 }
 
 .workleap-cta .btn {
